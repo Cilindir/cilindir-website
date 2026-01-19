@@ -1,7 +1,6 @@
 ---
 title: Introducing the <span class="line-break-mobile"><br></span> Cilindir Rift
 layout: "home"
-url: "/"
 
 desktop_hero_image:
   src: "/images/renders/hero/desktop/home.png"
