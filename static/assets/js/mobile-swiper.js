@@ -77,8 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const tileSelector = `
     .use-cases-container .swiper-container.mobile-only,
-    .stat-tile-grid-container .swiper-container.mobile-only,
-    .about-us-container .swiper-container.mobile-only,
+    .stat-tile-grid-container .swiper-container.mobile-only
     .pricing-container .swiper-container.mobile-only
     `;
     normalizeSwiperSlideHeights(tileSelector);

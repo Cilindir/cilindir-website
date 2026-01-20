@@ -4,152 +4,83 @@
         margin: 0 auto;
     }
 
-    .about-us-container h2 {
+    .about-us-container h2,
+    .founders-heading h2 {
         text-align: center;
+        font-size: 1.6rem;
     }
 
     .about-mission {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
 
     .founder-container {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        /* two equal columns */
-        gap: 40px;
-        width: 100%;
-        margin: 0 auto;
-        padding-top: 0;
-        box-sizing: border-box;
-        margin-top: 2rem;
-        align-items: stretch;
+        margin-top: 3rem;
     }
 
-    .founder-tile {
-        width: 100%;
-        border: 1px solid #ddd;
-        padding: 20px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .founder-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+        align-items: start;
+        margin-top: 2rem;
+    }
+
+    .founder-identity {
         text-align: center;
     }
 
-    .founder-summary {
-        align-items: center;
+    .founder-identity h2 {
+        margin-top: 0.5rem;
+        font-size: 1.6rem;
     }
 
     .founder-image {
-        max-width: 350px;
-        width: 80%;
+        width: 100%;
+        max-width: 300px;
         height: auto;
-        margin: 15px;
+        border-radius: 8px;
     }
 
-    .founder-summary h2 {
-        margin: 0;
-    }
-
-    .founder-summary h3 {
-        margin: 0;
-        font-size: 1.3rem;
-    }
-
-    .founder-tile p {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .founder-description {
-        width: 87%;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-
-    .founder-description p {
-        font-size: 1.1rem;
-        line-height: 1.4;
-        text-align: justify;
-    }
-
-    .founder-description a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    @media (max-width: 1024px) {
-
-        .about-us-container {
-            width: 90%;
-            margin: 0 auto;
-        }
-
-        .founder-container {
-            gap: 2rem;
-        }
-
-        .founder-description p {
-            text-align: left;
-        }
+    .founder-bio {
+        font-size: 1.05rem;
+        line-height: 1.5;
     }
 
     @media (max-width: 768px) {
 
-        .about-us-container {
-            width: 85%;
-            margin: 0 auto;
-        }
-
-        .founder-tile {
-            height: 100%;
-        }
-
-        .about-us-container h2 {
-            width: 90%;
-            margin: 0 auto;
-        }
-
-        .about-us-container p {
-            margin-top: 15px;
-            text-align: justify;
-            font-size: 0.92rem;
-        }
-
-        .about-mission {
-            margin-bottom: 1.5rem;
-        }
-
         .founders-heading {
-            padding-bottom: 1rem;
+            margin: 0;
+        }
+
+        .founder-container {
+            margin-top: 2rem;
+        }
+
+        .founder-content {
+            grid-template-columns: 1fr;
+            text-align: center;
+            gap: 0px;
+            margin: 0px;
         }
 
         .founder-image {
-            max-width: 250px;
-            margin: 5px;
+            width: 90%;
         }
 
-        .founder-tile {
-            padding: 15px;
+        .founder-identity h2 {
+            margin-top: 0.5rem;
+            font-size: 1.3rem;
         }
 
-        .founder-tile p {
-            font-size: 0.92rem;
-            margin: 10px 0;
-        }
-
-        .founder-description {
-            text-align: justify;
-        }
-
-        .founder-summary h2 {
-            font-size: 1.4rem;
+        .founder-bio {
+            text-align: left;
             width: 100%;
-            margin-top: 0;
+            margin: 0 auto;
         }
 
-        .founder-summary h3 {
-            font-size: 1.15rem;
+        .founder-bio p:last-child {
+            margin-bottom: 0;
         }
     }
 }
